@@ -232,3 +232,5 @@ class Fr {
       return Fr.add(new Fr(parseInt(split[0])), frac);
   }
 }
+
+exports.Fr = Fr;
