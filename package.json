@@ -1,0 +1,22 @@
+{
+  "name": "fraction-simple",
+  "version": "1.0.0",
+  "description": "Even simpler fraction class",
+  "main": "fraction.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panzerlover/simple-fraction.git"
+  },
+  "keywords": [
+    "fraction"
+  ],
+  "author": "Joseph Craven",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/panzerlover/simple-fraction/issues"
+  },
+  "homepage": "https://github.com/panzerlover/simple-fraction#readme"
+}
