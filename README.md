@@ -1,5 +1,3 @@
-Sure, here is a README for the `Fr` class:
-
 # Fr Class
 
 The `Fr` class represents a fraction and provides various methods for performing arithmetic operations, conversions, and manipulations with fractions. Simpler than fraction.js as it contains no logic for radians or advanced parsing of strings.
