@@ -72,7 +72,7 @@ class Fr {
   /**
    * @readonly
    * @type {string}
-   * @description Gets the string representation of the fraction.
+   * @description Gets the string representation of the fraction, without reduction
    */
   get toString() {
       return `${this.n}/${this.d}`;
@@ -81,7 +81,7 @@ class Fr {
   /**
    * @readonly
    * @type {string}
-   * @description Gets the string representation of the fraction in improper form.
+   * @description Gets the string representation of the fraction in improper form, showing a reduced version of the fraction
    */
   get toStringImproper() {
       const reduced = Fr.red(this);
@@ -104,6 +104,21 @@ class Fr {
           return reduced.toString;
       }
   }
+    /**
+   * @readonly
+   * @type {string}
+   * @description Gets the string representation of the fraction in proper form, without reducing it
+   */
+    get toStringProperNoReduce() {
+        if (this.d === 1) return String(this.n);
+        if (this.n > this.d) {
+            const underOne = Fr.uOne(this);
+            const secondBit = underOne.n === 0 ? '' : underOne.toString;
+            return `${this.asInt} ${secondBit}`;
+        } else {
+            return this.toString;
+        }
+    }
 
   /**
    * Inverts the given fraction.
