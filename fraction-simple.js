@@ -120,6 +120,20 @@ class Fr {
         }
     }
 
+      /**
+   * @readonly
+   * @type {string}
+   * @description Gets the string representation of the fraction in proper form, without reducing it
+   */
+      get toStringProperForceDenominator() {
+        if (this.d === 1) return `${this.n} 0/${this.d}`
+        if (this.n > this.d) {
+            return `${this.asInt} ${Fr.uOne(this).toString}`;
+        } else {
+            return this.toString;
+        }
+    }
+
   /**
    * Inverts the given fraction.
    * @param {Fr} fr - The fraction to invert.

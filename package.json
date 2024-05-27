@@ -1,6 +1,6 @@
 {
   "name": "fraction-simple",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Even simpler fraction class",
   "main": "fraction-simple.js",
   "repository": {
